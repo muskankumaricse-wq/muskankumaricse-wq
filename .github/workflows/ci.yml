@@ -1,0 +1,12 @@
+name: Hello World Pipeline
+
+# Triggers the workflow on every push to the repository
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print a greeting
+      run: echo "Hello! The pipeline is running successfully."
